@@ -10,10 +10,10 @@ For this demo you will need the following:
 
 ## Steps
 1. Install Node.js and the Particle CLI [https://docs.particle.io/guide/tools-and-features/cli/photon/](https://docs.particle.io/guide/tools-and-features/cli/photon/)
-    npm install -g particle-cli
+````npm install -g particle-cli
 Documentation for the CLI is [https://docs.particle.io/reference/cli/](https://docs.particle.io/reference/cli/)
 2. Open a terminal / command window and type in
-    particle login
+````particle login
 
 
 
