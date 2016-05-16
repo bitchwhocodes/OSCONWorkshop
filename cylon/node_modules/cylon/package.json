@@ -1,0 +1,101 @@
+{
+  "name": "cylon",
+  "version": "1.2.0",
+  "description": "A JavaScript robotics framework for Node.js",
+  "homepage": "http://cylonjs.com",
+  "bugs": {
+    "url": "https://github.com/hybridgroup/cylon/issues"
+  },
+  "author": {
+    "name": "The Hybrid Group",
+    "email": "cylonjs@hybridgroup.com"
+  },
+  "contributors": [
+    {
+      "name": "Ron Evans",
+      "email": "ron@hybridgroup.com"
+    },
+    {
+      "name": "Andrew Stewart",
+      "email": "andrew@hybridgroup.com"
+    },
+    {
+      "name": "Edgar Silva",
+      "email": "edgar@hybridgroup.com"
+    },
+    {
+      "name": "Mario 'Kuroir' Ricalde",
+      "email": "mario@hybridgroup.com"
+    },
+    {
+      "name": "Adrian Zankich",
+      "email": "adrian@hybridgroup.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hybridgroup/cylon"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "cylon",
+    "cylonjs",
+    "cylons",
+    "robot",
+    "robots",
+    "robotics",
+    "iot",
+    "hardware"
+  ],
+  "hardware": {
+    "*": false,
+    "./": false,
+    "./lib": true,
+    "index.js": true
+  },
+  "engines": {
+    "node": ">= 0.10.20"
+  },
+  "devDependencies": {
+    "sinon-chai": "2.7.0",
+    "chai": "2.2.0",
+    "mocha": "2.2.4",
+    "sinon": "1.14.1",
+    "eslint": "0.22.1"
+  },
+  "gitHead": "9182619baa81f0cadc12c7ca07f267c30b3c49ee",
+  "_id": "cylon@1.2.0",
+  "scripts": {},
+  "_shasum": "119cbcffa5957eee22b11f5206f6ef4f382fec33",
+  "_from": "cylon@*",
+  "_npmVersion": "2.0.2",
+  "_nodeVersion": "0.10.29",
+  "_npmUser": {
+    "name": "deadprogram",
+    "email": "ron@hybridgroup.com"
+  },
+  "maintainers": [
+    {
+      "name": "deadprogram",
+      "email": "ron@hybridgroup.com"
+    },
+    {
+      "name": "adzankich",
+      "email": "adrian@hybridgroup.com"
+    },
+    {
+      "name": "andrewstewart",
+      "email": "andrew@stwrt.ca"
+    },
+    {
+      "name": "edgarsilva",
+      "email": "edgar.osc@gmail.com"
+    }
+  ],
+  "dist": {
+    "shasum": "119cbcffa5957eee22b11f5206f6ef4f382fec33",
+    "tarball": "http://registry.npmjs.org/cylon/-/cylon-1.2.0.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/cylon/-/cylon-1.2.0.tgz"
+}

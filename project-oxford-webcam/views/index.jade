@@ -1,0 +1,50 @@
+extends layout
+
+block content
+  div.holders
+    canvas#photo(width='640' height='480')
+    img#photoimg(width='640' height='480')
+    img#emo
+    ul#emojis
+       li
+            div
+             img(src="/images/sad.png")
+             p.sadness Sadness
+       li
+            div
+             img(src="/images/smiling.png")
+             p.happiness Happiness
+       li
+            div
+             img(src="/images/contempt.png")
+             p.contempt Contempt
+       li
+            div
+             img(src="/images/fear.png")
+             p.fear Fear
+       li
+            div
+             img(src="/images/disgust.png")
+             p.disgust Disgust
+       li
+            div
+             img(src="/images/angry-face.png")
+             p.anger Anger
+       li
+            div
+             img(src="/images/astonished-face.png")
+             p.surprise Surprise
+             
+        li
+            div
+             img(src="/images/neutral.png")
+             p.neutral Neutral
+         
+       
+    div.buttonholder
+        
+        button.btn#sendbutton Analyze Image
+        button.btn#resetbutton Reset Camera
+
+    video#camera(width='640' height='480')
+    div#feedback

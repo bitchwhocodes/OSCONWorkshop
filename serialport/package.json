@@ -1,0 +1,14 @@
+{
+  "name": "SerialPort",
+  "version": "1.0.0",
+  "description": "SerialPort Example",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Stacey Mulcahy",
+  "license": "ISC",
+  "dependencies": {
+    "serialport": "^2.0.4"
+  }
+}
