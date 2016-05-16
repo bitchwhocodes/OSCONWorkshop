@@ -24,28 +24,26 @@ router.put('/', function(req, res, next) {
 
   myimage = req.body.data.replace(/^data:image\/jpeg+;base64,/, "");
   myimage = parseDataURL(req.body.data).data;
-
-  fs.writeFile('images/image.jpeg', req.body.data, 'base64', function(err) {
-    
-      console.log("File System"+err)
-      oxfordEmotion.recognize("image", myimage, function(response) {
+oxfordEmotion.recognize("image", myimage, function(response) {
           console.log(response);
-          //doSpark(response);
+          doSpark(response);
           res.json(response);
           
 
       });
-   });
+  
   });
 
 
   function doSpark(response)
   {
-      var value = parseFloat(response[0].scores.happiness);
+    console.log(response)
+      var value = parseFloat(JSON.parse(response)[0].scores.happiness);
       var isHappy = (value> 0.5)? "1":"0";
+      console.log("is Happy?"+isHappy);
       Spark.login({ username: process.env.PARTICLE_USER, password:process.env.PARICLE_PASS }, function(err, body) {
         Spark.callFunction(process.env.PARTICLE_ID,'setMode',isHappy,function(err,data){
-               // console.log
+               console.log("Spark has finished");
           }); 
     });
   }
