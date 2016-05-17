@@ -41,7 +41,7 @@ oxfordEmotion.recognize("image", myimage, function(response) {
       var value = parseFloat(JSON.parse(response)[0].scores.happiness);
       var isHappy = (value> 0.5)? "1":"0";
       console.log("is Happy?"+isHappy);
-      Spark.login({ username: process.env.PARTICLE_USER, password:process.env.PARICLE_PASS }, function(err, body) {
+      Spark.login({ username: process.env.PARTICLE_EMAIL, password:process.env.PARTICLE_PASS }, function(err, body) {
         Spark.callFunction(process.env.PARTICLE_ID,'setMode',isHappy,function(err,data){
                console.log("Spark has finished");
           }); 
